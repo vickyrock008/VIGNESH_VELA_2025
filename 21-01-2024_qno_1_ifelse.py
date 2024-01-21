@@ -33,6 +33,8 @@ Sample Output 1
 
 Not Weird'''
 
+#logic number 1 using modulus operator
+
 if __name__ == '__main__':
     n = int(input().strip())
     if n%2!=0:
@@ -42,4 +44,15 @@ if __name__ == '__main__':
     elif n%2==0 and 6 <= n <=20:
         print("Weird")
     elif n%2==0 and 20 <= n:
+        print("Not Weird")
+#logic number 2 using bitwise operator
+if __name__ == '__main__':
+    n = int(input().strip())
+    if n&1==1:
+        print("Weird")
+    elif n&1==0 and 2 <= n <=5:
+        print("Not Weird")
+    elif n&1==0 and 6 <= n <=20:
+        print("Weird")
+    elif n&1==0 and 20 <= n:
         print("Not Weird")
