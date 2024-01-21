@@ -31,9 +31,18 @@ Sample Output 0
 
 1
 1.33333333333'''
-
+#logic number 1 using floor division operator
 if __name__ == '__main__':
     a = int(input())
     b = int(input())
     print(a//b)
+    print(a/b)
+
+#logic number 2 using math built in function
+
+if __name__ == '__main__':
+    import math
+    a = int(input())
+    b = int(input())
+    print(math.floor(a/b))
     print(a/b)
